@@ -4,33 +4,12 @@ using System.Text;
 
 namespace InterfacesExample
 {
-    class MacBook : Pendrive
+    class MacBook : Mac
     {
-        public string serialNumber { get; }
-        public MacBook(string serialNo)
+        public int fingerPrintReaderID { get; set; }
+        public MacBook(string serialNo,int fingerPid) : base(serialNo)
         {
-            serialNumber = serialNo;
+            fingerPrintReaderID = fingerPid;
         }
-
-        /// <summary>
-        /// Method used for connect media to the computer
-        /// </summary>
-        public void PlugIn()
-        {
-            isPluggedIn = true;
-            driveLetter = "X:";
-            Console.WriteLine("Pendrive has been plugged-in");
-        }
-
-        /// <summary>
-        /// Method used for unconnect media from the computer
-        /// </summary>
-        public void PlugOut()
-        {
-            isPluggedIn = false;
-            driveLetter = "";
-            Console.WriteLine("Pendrive has been plugged-out");
-        }
-
     }
 }
