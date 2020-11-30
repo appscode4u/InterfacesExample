@@ -2,6 +2,6 @@
 {
     interface IReadable
     {
-        bool LoadFile(File file);
+        public File LoadFile(string fullPath);
     }
 }

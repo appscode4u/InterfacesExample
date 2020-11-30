@@ -6,7 +6,9 @@ namespace InterfacesExample
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            MacBook mac = new MacBook();
+            mac.
+            Console.WriteLine();
         }
     }
 }
