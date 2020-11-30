@@ -4,9 +4,7 @@ using System.Text;
 
 namespace InterfacesExample
 {
-    interface IWriteable
+    interface IReadable
     {
-        bool WriteData(File f, string content);
-        bool DeleteContent(File f);
     }
 }
