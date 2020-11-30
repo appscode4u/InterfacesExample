@@ -5,15 +5,11 @@ using System.Text;
 namespace InterfacesExample
 {
     class MacBook : Pendrive
-    {   
-        public MacBook()
-        {/*
-            File f = LoadFile(@"c:\test\test.txt");
-            Console.WriteLine($"nazwa pliku: {f.NAME}");
-            WriteData(f, "cont1");
-            WriteData(f, "cont2");
-            Console.WriteLine("Is content of file {0} deleted? {1}",f.NAME, DeleteContent(f));
-       */
+    {
+        public string serialNumber { get; }
+        public MacBook(string serialNo)
+        {
+            serialNumber = serialNo;
         }
 
         /// <summary>

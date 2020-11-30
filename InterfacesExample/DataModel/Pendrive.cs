@@ -45,16 +45,5 @@ namespace InterfacesExample
             f.CONTENT = content;
             return true;
         }
-
-        /// <summary>
-        /// Method to test if a file exists in provided location
-        /// </summary>
-        /// <param name="path"></param>
-        /// <returns></returns>
-        public bool FileExists(string path)
-        {
-            return true;
-        }
-
     }
 }
