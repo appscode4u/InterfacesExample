@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace InterfacesExample
+﻿namespace InterfacesExample
 {
     interface IReadable
     {
+        bool LoadFile(File file);
     }
 }
